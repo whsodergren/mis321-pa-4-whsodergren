@@ -1,0 +1,108 @@
+body {
+    color: white;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: maroon;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}
+
+
+#add-btn {
+    color: white;
+    background: black;
+    width: 200px;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+#delete-btn, #pin-btn {
+    color: white;
+    background: black;
+    width: 150px;
+    height: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: larger;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#add-btn:hover, #delete-btn:hover, #pin-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+}
+
+.table {
+    text-align: center;
+}
+
+table, th, td {    
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    text-align: center;  
+    border-bottom: 0px;
+}  
+    
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+      
+.navbar li {
+    float: left;
+}
+      
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      
+      /* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #333;
+}
+
+.fade-in {
+    opacity: 0; /* Initially, set the opacity to 0 (invisible) */
+    animation: fadeInAnimation 1s ease-in-out forwards; /* Animation properties */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Start with opacity 0 (invisible) */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 (fully visible) */
+    }
+}
